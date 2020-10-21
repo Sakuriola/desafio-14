@@ -1,0 +1,282 @@
+body {
+  font-family: "Poppins";
+  margin: 0 !important;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: inline-block;
+}
+header .contenedorHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+header .contenedorHeader .logo {
+  display: inline-block;
+  justify-items: left;
+  width: 30%;
+}
+header .contenedorHeader .logo a {
+  display: block;
+}
+header .contenedorHeader .logo a img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: 10px 20px;
+}
+header .contenedorHeader .logo a img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s ease-in-out;
+}
+header .contenedorHeader nav {
+  display: inline-block;
+  width: 70%;
+  text-align: right;
+}
+header .contenedorHeader nav ul li {
+  padding: 0 20px;
+  display: inline-block;
+  justify-content: end;
+}
+header .contenedorHeader nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  justify-content: end;
+}
+header .contenedorHeader nav ul li a:hover {
+  color: #b7b8b6;
+}
+
+.main-carousel {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+}
+.main-carousel .widthCarrousel {
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.nosotros {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+}
+.nosotros div {
+  width: 50%;
+  margin: 25px auto;
+}
+.nosotros div h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.nosotros div p {
+  font-size: 19px;
+  margin: 19px 0;
+}
+
+.shop .contenedorShop {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.shop .contenedorShop img {
+  margin: 10px;
+  border-radius: 20px 50px;
+}
+.shop .contenedorShop img:hover {
+  filter: blur(1px);
+}
+.shop .productosDiv {
+  margin: auto;
+}
+.shop .productosDiv .textoSecciones h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.divFormulario {
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.divFormulario h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.divFormulario .textLabel {
+  text-align: right;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+footer .contenedorFooter1 {
+  width: 100%;
+  display: inline-flex;
+}
+footer .contenedorFooter1 .menuFooter {
+  margin-left: 30px;
+}
+footer .contenedorFooter1 .menuFooter h4 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+footer .contenedorFooter1 .menuFooter p {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+footer .contenedorFooter1 .contactoFooter {
+  margin: 0 60px;
+}
+footer .contenedorFooter1 .contactoFooter h4 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+footer .contenedorFooter1 .contactoFooter p {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+footer .contenedorFooter1 .redesFooter h4 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+footer .contenedorFooter1 .redesFooter p {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+footer .contenedorFooter2 {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+footer .contenedorFooter2 .contenedorFooterImg {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contenedorFooter2 .contenedorFooterImg img {
+  width: 90px;
+  height: auto;
+  margin: 10px 30px 10px 20px;
+}
+footer .contenedorFooter2 .contenedorFooterP {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+footer .contenedorFooter2 .contenedorFooterP p {
+  color: white;
+  margin-bottom: 0;
+}
+footer .contenedorFooter2 .contenedorFooterP .redesContenedor {
+  display: inline-flex;
+  align-items: center;
+}
+footer .contenedorFooter2 .contenedorFooterP .redesContenedor a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    width: 100%;
+  }
+
+  .contenedorHeader div {
+    width: 30%;
+  }
+  .contenedorHeader nav {
+    width: 70%;
+  }
+  .contenedorHeader nav ul {
+    flex-wrap: nowrap;
+  }
+
+  .nosotros div {
+    width: 90%;
+  }
+  .nosotros div h2 {
+    font-size: 17px;
+  }
+  .nosotros div p {
+    font-size: 15px;
+  }
+
+  .shop .contenedorShop {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .shop .contenedorShop img {
+    width: 50%;
+  }
+
+  footer .contenedorFooter1 {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+  footer .contenedorFooter1 .menuFooter {
+    margin: 0;
+  }
+  footer .contenedorFooter1 .menuFooter h4 {
+    font-size: 17px;
+  }
+  footer .contenedorFooter1 .contactoFooter {
+    margin: 0;
+  }
+  footer .contenedorFooter1 .contactoFooter h4 {
+    font-size: 17px;
+  }
+  footer .contenedorFooter1 .redesFooter {
+    margin: 0;
+  }
+  footer .contenedorFooter1 .redesFooter h4 {
+    font-size: 17px;
+  }
+  footer .contenedorFooter2 {
+    display: block;
+    margin-bottom: 10px 0;
+  }
+  footer .contenedorFooter2 .contenedorFooterImg {
+    margin: auto;
+  }
+  footer .contenedorFooter2 .contenedorFooterP {
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

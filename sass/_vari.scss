@@ -1,0 +1,43 @@
+$principal-font: "Poppins";
+$background-color: black;
+$menu-hover-color: #b7b8b6;
+
+@mixin tamaño {
+    width: 100%;
+    height: auto;
+}
+
+@mixin letras-a {
+    text-decoration: none;
+    color: white;
+}
+
+@mixin transform {
+    transform: scale(1.2, 1.2);
+} 
+
+@mixin h2-modi{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+@mixin formularios {
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@mixin h4-footer {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@mixin p-footer {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 16px;
+}

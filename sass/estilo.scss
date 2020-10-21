@@ -1,0 +1,333 @@
+@import'vari';
+
+body {
+    font-family: $principal-font;
+    margin: 0!important;
+}
+
+//estilos header
+header {
+    @include tamaño;
+    background-color: $background-color;
+    display: inline-block;
+
+    .contenedorHeader {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .logo {
+            display: inline-block;
+            justify-items: left;
+            width: 30%;
+
+            a {
+                display: block;
+
+                img {
+                    @include tamaño;
+                    max-width: 150px;
+                    margin: 10px 20px;
+
+                    &:hover {
+                        @include transform;
+                        transition: 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        nav {
+            display: inline-block;
+            width: 70%;
+            text-align: right;
+
+            ul {
+                li {
+                    padding: 0 20px;
+                    display: inline-block;
+                    justify-content: end;
+
+                    a {
+                        @include letras-a;
+                        display: inline-block;
+                        justify-content: end;
+
+                        &:hover {
+                            color: $menu-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//estilos carrousel
+.main-carousel {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+
+    .widthCarrousel {
+        padding: 0;
+    }
+}
+
+section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+} 
+
+//estilos nosotros {
+.nosotros {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+
+    div {
+        width: 50%;
+        margin: 25px auto;
+
+        h2 {
+            @include h2-modi;
+        }
+
+        p {
+            font-size: 19px;
+            margin: 19px 0;
+        }
+    }
+}
+
+//estilos shop
+.shop {
+    .contenedorShop {
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+            margin: 10px;
+            border-radius: 20px 50px;
+
+            &:hover {
+                filter: blur(1px);
+            }
+        }
+    }
+
+    .productosDiv {
+        margin: auto;
+
+        .textoSecciones {
+            h2 {
+                @include h2-modi;
+            }
+        }
+    }
+}
+
+//estilos formulario 
+.divFormulario {
+    @include formularios;
+
+    h2 {
+        @include h2-modi
+    }
+
+    .textLabel {
+        text-align: right;
+    }
+}
+
+//estilos footer 
+footer {
+    background-color: $background-color;
+    width: 100%;
+
+    .contenedorFooter1 {
+        width: 100%;
+        display: inline-flex;
+
+        .menuFooter {
+            margin-left: 30px;
+
+            h4 {
+                @include h4-footer;
+            }
+    
+            p {
+                @include p-footer;
+            }
+        }
+
+        .contactoFooter {
+            margin: 0 60px;
+
+            h4 {
+                @include h4-footer;
+            }
+    
+            p {
+                @include p-footer;
+            }
+        }
+
+        .redesFooter {
+            h4 {
+                @include h4-footer;
+            }
+    
+            p {
+                @include p-footer;
+            }
+        }
+    }
+
+    .contenedorFooter2 {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+
+        .contenedorFooterImg {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 90px;
+                height: auto;
+                margin: 10px 30px 10px 20px;
+            }
+        }
+
+        .contenedorFooterP {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+
+            p {
+                color: white;
+                margin-bottom: 0;
+            }
+
+            .redesContenedor {
+                display: inline-flex;
+                align-items: center;
+
+                a {
+                    @include letras-a;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+
+}
+
+//media queries 
+
+//mobile 
+@media only screen and (max-width: 575px) {
+    body {
+        width: 100%;
+    }
+
+    .contenedorHeader {
+        div {
+            width: 30%;
+        }
+
+        nav {
+            width: 70%;
+
+            ul {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+
+    .nosotros {
+
+        div {
+            width: 90%;
+
+            h2 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+        
+    }
+
+    .shop {
+
+        .contenedorShop {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    footer {
+        .contenedorFooter1 {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+    
+            .menuFooter {
+                margin: 0;
+    
+                h4 {
+                    font-size: 17px;
+                }
+            }
+    
+            .contactoFooter {
+                margin: 0;
+    
+                h4 {
+                    font-size: 17px;
+                }
+            }
+    
+            .redesFooter {
+                margin: 0;
+    
+                h4 {
+                    font-size: 17px;
+                }
+            }
+        }
+    
+        .contenedorFooter2 {
+            display: block;
+            margin-bottom: 10px 0;
+    
+            .contenedorFooterImg {
+                margin: auto;
+            }
+    
+            .contenedorFooterP {
+                width: 100%;
+                display: block;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    
+    }
+
+}
